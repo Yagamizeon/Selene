@@ -1,0 +1,152 @@
+
+/* === Reset e estilo base === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+/* === Logo Selene no canto superior esquerdo === */
+.logo-superior {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+.logo-superior img {
+  height: 50px;
+}
+
+/* === Wrapper central (form + resultados) === */
+.main-content {
+  max-width: 700px;
+  margin: 80px auto 40px; /* espaço para o logo e o rodapé */
+  padding: 0 20px;
+}
+
+/* Formulário de CPF em linha */
+form#formCpf {
+  display: flex;           /* ativa flexbox */
+  align-items: center;     /* alinha verticalmente */
+  gap: 8px;                /* espaço entre os itens */
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Faz o input crescer para usar o espaço disponível */
+form#formCpf input {
+  flex: 1;                 /* input ocupa todo o espaço restante */
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Botão ao lado, sem ocupar todo o espaço */
+form#formCpf button {
+  flex: 0;                 /* tamanho natural do botão */
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === Container de resultados (cards) === */
+#caixaResultados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+}
+#caixaResultados.oculto {
+  display: none;
+}
+
+/* === Cada card de resultado === */
+.box-resultado {
+  background: #333;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 200px;
+  flex: 1 1 200px;
+}
+.box-resultado h3 {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  text-align: center;
+  color: #007bff;     /* título em azul */
+  font-weight: bold;
+}
+.box-resultado p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+.box-resultado .conteudo p strong {
+  color: #007bff;     /* rótulos em azul */
+  font-weight: bold;
+}
+
+/* === Botões de navegação dentro dos cards === */
+.box-resultado .nav-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+.box-resultado .nav-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.box-resultado .nav-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* === Links gerais de <strong> === */
+strong {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* === Botões globais === */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* === Rodapé com logo da VieiraCred === */
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+footer img {
+  height: 30px;
+}

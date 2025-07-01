@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Selene</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Logo no canto superior esquerdo -->
+  <div class="logo-superior">
+    <img src="logo-selene.png" alt="Logo Selene">
+  </div>
+
+  <div class="main-content">
+    <!-- Formulário de CPF -->
+    <form id="formCpf">
+      <label for="cpfCliente">Digite o CPF:</label>
+      <input type="text" id="cpfCliente" placeholder="Somente números" required>
+      <button type="submit">Consultar</button>
+    </form>
+
+    <!-- Container de resultados -->
+    <div id="caixaResultados" class="oculto"></div>
+  </div>
+
+  <!-- Rodapé com logo da VieiraCred -->
+  <footer>
+    <img src="logo-vieiracred.png" alt="Logo VieiraCred">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+{
+  "name": "selene",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.x",
+    "mysql2": "^2.x",
+    "dotenv": "^10.x"
+  }
+}
+
